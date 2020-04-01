@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel ="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+</head>
+
+<body>
+    <h1>Welcome to This or That!</h1>
+    <form action="." method="POST" enctype="multipart/form-data">
+	<p><FONT size = "5">What are you hesitating between? </FONT></p>
+	<br>
+	<label for="possib1">Enter the first possibility : </label>
+	<input type="text" name="rName" id = "possib1" placeholder="Enter The first possibility">
+        <br>
+        <label for="possib2">Enter the second possibility : </label>
+	<input type="text" name="rName1" id = "possib2" placeholder="Enter The second possibility">
+	<br>  
+	<label for="pic">Upload your picture : </label>
+        <input type="file" name="file" id = "pic" />  
+        <br> 
+	<label for="numpic">What size for your datasets (int number, recommended more than 25) : </label>
+        <input type="number" name="numpic" id = "numpic" /> 
+	<br>
+        <button type="submit">Create your model</button>
+	<br>
+    </form>
+</body>
+</html>

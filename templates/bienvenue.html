@@ -1,0 +1,15 @@
+﻿<!doctype html>
+<html lang="en">
+    <head>
+		<link rel ="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}"
+    </head>
+    <body>
+	<h1> You are hesitating between {{ message }} and {{message1}} </h1>
+	<p>File uploaded successfully</p>  
+	<p>File Name: {{name}}</p>  
+	<img src= "{{url_for('static', filename=user)}}",alt={{name}}/>
+	<br> 
+	<p>Your image is a {{result}} !!!</p>
+    </body>
+    <a href="{{ url_for('home') }}"> Try another image </a>
+</html>
